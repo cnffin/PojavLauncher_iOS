@@ -54,10 +54,10 @@
     
     self.isInitialVc = YES;
     
-#UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AppLogo"]];
-#[titleView setContentMode:UIViewContentModeScaleAspectFit];
-#self.navigationItem.titleView = titleView;
-#[titleView sizeToFit];
+    UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AppLogo"]];
+    [titleView setContentMode:UIViewContentModeScaleAspectFit];
+    self.navigationItem.titleView = titleView;
+    [titleView sizeToFit];
     
     self.options = @[
         [LauncherMenuCustomItem vcClass:LauncherNewsViewController.class],
