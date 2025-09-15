@@ -90,7 +90,7 @@ UIEdgeInsets insets;
 - (void)adjustWebViewForSize:(CGSize)size {
     BOOL isPortrait = size.height > size.width;
     if (isPortrait) {
-        webView.scrollView.contentInset = UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height + insets.top, 0, self.navigationController.navigationBar.frame.size.height + insets.bottom, 0);
+        webView.scrollView.contentInset = UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height + insets.top, 0, self.navigationController.navigationBar.frame.size.height + insets.bottom + 100, 0);
     } else {
         webView.scrollView.contentInset = UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height, 0, self.navigationController.navigationBar.frame.size.height, 0);
     }
